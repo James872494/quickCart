@@ -23,7 +23,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <Stack initialRouteName="OnboardScreens/welcome1">
         <Stack.Screen
           name="OnboardScreens/welcome1"
           options={{ headerShown: false }}
