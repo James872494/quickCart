@@ -3,6 +3,8 @@ module.exports = function (api) {
   return {
     presets: ["babel-preset-expo"],
     plugins: [
+      // Enable Expo Router file-based routing transforms
+      "expo-router/babel",
       [
         "module:react-native-dotenv",
         {
